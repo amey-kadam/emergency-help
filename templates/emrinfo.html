@@ -1,25 +1,20 @@
-<!-- templates/user_info.html -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="{{ url_for('static', filename='css/uinfo.css') }}">
-    <title>User Info</title>
+
+    <title>Emergency Contact Information</title>
   </head>
   <body>
-    <h1>User Information</h1>
+    <h1>Emergency Contact Information</h1>
     <p><strong>Name:</strong> {{ name }}</p>
     <p><strong>Contact:</strong> {{ contact }}</p>
     <p>
-      <strong>Document:</strong>
-      <a href="{{ url_for('download_file', filename=document_filename) }}"
-        >Download Document</a
-      >
-    </p>
-
-    <p>
-      <button type="submit">Send Live Location</button>
-    </p>
+        <button type="submit">Send Live Location</button>
+      </p>
   </body>
 </html>
+
+

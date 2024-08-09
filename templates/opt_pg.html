@@ -1,15 +1,11 @@
 <!doctype html>
 <html>
 <head>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/opt_pg.css') }}">
-
-    <title>2 options page</title>
+    <title>QR Scan Result</title>
 </head>
 <body>
-    <h1>Select your type</h1>
-    <div class="buts">
-        <button type="submit">Authorized Person</button>
-        <button type="submit">Emergency</button>
-    </div>
+    <h1>Choose an Option</h1>
+    <a href="{{ url_for('authorize', user_id=user_id) }}">Authorize</a>
+    <a href="{{ url_for('emergency', user_id=user_id) }}">Emergency</a>
 </body>
 </html>

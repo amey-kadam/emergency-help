@@ -53,18 +53,6 @@ def allowed_file(filename):
 def index():
     return render_template('index.html')
 
-@app.route('/login', methods=['GET', 'POST'])
-def login():
-    if request.method == 'POST':
-        email = request.form['email']
-        password = request.form['password']
-        if email in USERS and USERS[email]['password'] == password:
-            user = User(email)
-            login_user(user)
-            return redirect(url_for('index'))
-        else:
-            flash('Invalid credentials')
-    return render_template('login.html')
 
 @app.route('/logout')
 @login_required
@@ -91,14 +79,55 @@ def generate_qr():
     db.execute('INSERT INTO users (name, contact, documents) VALUES (?, ?, ?)', (name, contact, file_path))
     db.commit()
 
-    # Generate QR code with user ID embedded in URL
+    # Generate QR code with user ID embedded in the URL to opt_pg
     user_id = db.execute('SELECT last_insert_rowid()').fetchone()[0]
-    qr_data = url_for('user_info', user_id=user_id, _external=True)
+    qr_data = url_for('opt_pg', user_id=user_id, _external=True)
     img_str = generate_qr_code(qr_data)
 
     return render_template('qr_code.html', qr_code_url=f"data:image/png;base64,{img_str}")
 
+@app.route('/opt_pg/<int:user_id>')
+def opt_pg(user_id):
+    return render_template('opt_pg.html', user_id=user_id)
+
+# @app.route('/info/<int:user_id>/authorize')
+# def authorize(user_id):
+#     # Redirect to the login page for authorization
+#     return redirect(url_for('login'))
+
+@app.route('/authorize/<int:user_id>')
+def authorize(user_id):
+    # Your authorization logic here
+    return redirect(url_for('login'))
+
+
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    user_id = request.args.get('user_id')  # Retrieve the user_id from the query string
+    if request.method == 'POST':
+        email = request.form['email']
+        password = request.form['password']
+        if email in USERS and USERS[email]['password'] == password:
+            user = User(email)
+            login_user(user)
+            return redirect(url_for('user_info', user_id=user_id))  # Redirect to the user_info with the user_id
+        else:
+            flash('Invalid credentials')
+    return render_template('login.html', user_id=user_id)
+
+
+
+@app.route('/info/<int:user_id>/emergency')
+def emergency(user_id):
+    db = get_db()
+    user = db.execute('SELECT name, contact FROM users WHERE id = ?', (user_id,)).fetchone()
+    if user:
+        return render_template('emrinfo.html', name=user['name'], contact=user['contact'])
+    else:
+        return "User not found", 404
+
 @app.route('/info/<int:user_id>')
+@login_required
 def user_info(user_id):
     db = get_db()
     user = db.execute('SELECT name, contact, documents FROM users WHERE id = ?', (user_id,)).fetchone()
@@ -111,34 +140,10 @@ def user_info(user_id):
     else:
         return "User not found", 404
 
-
-@app.route('/scan_qr', methods=['GET', 'POST'])
-@login_required
-def scan_qr():
-    if request.method == 'POST':
-        qr_code_data = request.form['qr_code_data']
-        name, contact, documents = qr_code_data.split(',')
-        session['otp'] = generate_otp()
-        session['documents'] = documents
-        send_otp(contact, session['otp'])
-        return redirect(url_for('verify_otp'))
-    return render_template('scan_qr.html')
-
-@app.route('/verify_otp', methods=['GET', 'POST'])
-@login_required
-def verify_otp():
-    if request.method == 'POST':
-        otp = request.form['otp']
-        if otp == session.get('otp'):
-            return redirect(url_for('user_info', user_id=session['documents']))
-        else:
-            flash('Invalid OTP')
-    return render_template('verify_otp.html')
-
 @app.route('/download/<filename>')
+@login_required
 def download_file(filename):
     return send_from_directory(app.config['UPLOAD_FOLDER'], filename, as_attachment=True)
-
 
 if __name__ == '__main__':
     os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)

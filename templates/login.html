@@ -5,7 +5,7 @@
 </head>
 <body>
     <h1>Login</h1>
-    <form method="post">
+    <form method="post" action="{{ url_for('authorize', user_id=request.args.get('user_id')) }}">
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
         <br>
@@ -14,14 +14,5 @@
         <br>
         <button type="submit">Login</button>
     </form>
-    {% with messages = get_flashed_messages() %}
-        {% if messages %}
-            <ul>
-            {% for message in messages %}
-                <li>{{ message }}</li>
-            {% endfor %}
-            </ul>
-        {% endif %}
-    {% endwith %}
 </body>
 </html>
