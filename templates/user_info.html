@@ -1,25 +1,50 @@
-<!-- templates/user_info.html -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/uinfo.css') }}">
-    <title>User Info</title>
-  </head>
-  <body>
-    <h1>User Information</h1>
-    <p><strong>Name:</strong> {{ name }}</p>
-    <p><strong>Contact:</strong> {{ contact }}</p>
-    <p>
-      <strong>Document:</strong>
-      <a href="{{ url_for('download_file', filename=document_filename) }}"
-        >Download Document</a
-      >
-    </p>
+    <title>User Info - {{ name }}</title>
+</head>
+<body>
+    <header>
+        <h1>User Information</h1>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Personal Details</h2>
+            <p><strong>Name:</strong> {{ name or 'Not provided' }}</p>
+            <p><strong>Contact:</strong> {{ contact or 'Not provided' }}</p>
+        </section>
 
-    <p>
-      <button type="submit">Send Live Location</button>
-    </p>
-  </body>
+        <section>
+            <h2>Documents</h2>
+            {% if document_filename %}
+                <p>
+                    <strong>Document:</strong>
+                    <a href="{{ url_for('download_file', filename=document_filename) }}" download>Download Document</a>
+                </p>
+            {% else %}
+                <p>No document available.</p>
+            {% endif %}
+        </section>
+
+        <section>
+            <h2>Location</h2>
+            <button id="sendLocationBtn">Send Live Location</button>
+        </section>
+    </main>
+
+    <footer>
+        <a href="{{ url_for('index') }}">Back to Home</a>
+    </footer>
+
+    <script>
+        document.getElementById('sendLocationBtn').addEventListener('click', function() {
+            // Implement location sending functionality here
+            alert('Location sending feature not implemented yet.');
+        });
+    </script>
+</body>
 </html>

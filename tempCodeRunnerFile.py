@@ -93,7 +93,8 @@ def opt_pg(user_id):
 
 @app.route('/info/<int:user_id>/authorize')
 def authorize(user_id):
-    return redirect(url_for('login', user_id=user_id))
+
+    return redirect(url_for('login.html', user_id=user_id))
 
 
 @app.route('/login', methods=['GET', 'POST'])
