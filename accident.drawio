@@ -1,0 +1,129 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" version="24.7.6">
+  <diagram name="Page-1" id="FXt8_tby40IHZ5azGL9O">
+    <mxGraphModel dx="1361" dy="1520" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="800" pageHeight="800" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="UoYrwcGaJrfpcXe-qQTb-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UoYrwcGaJrfpcXe-qQTb-1" target="UoYrwcGaJrfpcXe-qQTb-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UoYrwcGaJrfpcXe-qQTb-1" value="Start" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="56" y="-772" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UoYrwcGaJrfpcXe-qQTb-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UoYrwcGaJrfpcXe-qQTb-2" target="UoYrwcGaJrfpcXe-qQTb-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UoYrwcGaJrfpcXe-qQTb-2" value="Enter Login details" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="56" y="-652" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UoYrwcGaJrfpcXe-qQTb-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UoYrwcGaJrfpcXe-qQTb-4" target="UoYrwcGaJrfpcXe-qQTb-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UoYrwcGaJrfpcXe-qQTb-4" value="QR is generated" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="56" y="-532" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UoYrwcGaJrfpcXe-qQTb-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UoYrwcGaJrfpcXe-qQTb-6" target="UoYrwcGaJrfpcXe-qQTb-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UoYrwcGaJrfpcXe-qQTb-6" value="QR will be scanned" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="56" y="-402" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UoYrwcGaJrfpcXe-qQTb-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UoYrwcGaJrfpcXe-qQTb-10" target="UoYrwcGaJrfpcXe-qQTb-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UoYrwcGaJrfpcXe-qQTb-17" value="Option 1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="UoYrwcGaJrfpcXe-qQTb-13">
+          <mxGeometry x="-0.4545" y="2" relative="1" as="geometry">
+            <mxPoint x="12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UoYrwcGaJrfpcXe-qQTb-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UoYrwcGaJrfpcXe-qQTb-10" target="UoYrwcGaJrfpcXe-qQTb-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UoYrwcGaJrfpcXe-qQTb-18" value="Option 2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="UoYrwcGaJrfpcXe-qQTb-15">
+          <mxGeometry x="-0.0667" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UoYrwcGaJrfpcXe-qQTb-10" value="will be taken&amp;nbsp;&lt;div&gt;to a Web page&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="41" y="-292" width="150" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="UoYrwcGaJrfpcXe-qQTb-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UoYrwcGaJrfpcXe-qQTb-12" target="UoYrwcGaJrfpcXe-qQTb-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UoYrwcGaJrfpcXe-qQTb-48" value="Click" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="UoYrwcGaJrfpcXe-qQTb-24">
+          <mxGeometry x="-0.0333" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UoYrwcGaJrfpcXe-qQTb-12" value="Emergency" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="288" y="-372" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UoYrwcGaJrfpcXe-qQTb-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UoYrwcGaJrfpcXe-qQTb-14" target="UoYrwcGaJrfpcXe-qQTb-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UoYrwcGaJrfpcXe-qQTb-14" value="Authorize" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="56" y="-102" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UoYrwcGaJrfpcXe-qQTb-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UoYrwcGaJrfpcXe-qQTb-19" target="UoYrwcGaJrfpcXe-qQTb-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UoYrwcGaJrfpcXe-qQTb-19" value="Login page" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="238" y="-102" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UoYrwcGaJrfpcXe-qQTb-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UoYrwcGaJrfpcXe-qQTb-23" target="UoYrwcGaJrfpcXe-qQTb-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UoYrwcGaJrfpcXe-qQTb-23" value="Basic user details&lt;div&gt;will be displayed&lt;br&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="298" y="-522" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UoYrwcGaJrfpcXe-qQTb-25" value="send live location to emergency contact no." style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="288" y="-642" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UoYrwcGaJrfpcXe-qQTb-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UoYrwcGaJrfpcXe-qQTb-31" target="UoYrwcGaJrfpcXe-qQTb-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UoYrwcGaJrfpcXe-qQTb-37" value="Option 1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="UoYrwcGaJrfpcXe-qQTb-34">
+          <mxGeometry x="-0.2016" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UoYrwcGaJrfpcXe-qQTb-40" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="UoYrwcGaJrfpcXe-qQTb-31" target="UoYrwcGaJrfpcXe-qQTb-47">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="519.0000000000002" y="-202.00000000000023" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UoYrwcGaJrfpcXe-qQTb-46" value="Option 2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="UoYrwcGaJrfpcXe-qQTb-40">
+          <mxGeometry x="-0.6111" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UoYrwcGaJrfpcXe-qQTb-31" value="All details will be displayed" style="rhombus;whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="418" y="-122" width="122" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="UoYrwcGaJrfpcXe-qQTb-33" value="&#xa;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;send live location to emergency contact no.&lt;/span&gt;&#xa;&#xa;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="638" y="-102" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UoYrwcGaJrfpcXe-qQTb-42" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="UoYrwcGaJrfpcXe-qQTb-47" target="UoYrwcGaJrfpcXe-qQTb-41">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="519.0000000000002" y="-301.99999999999955" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="518" y="-301" />
+              <mxPoint x="589" y="-301" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UoYrwcGaJrfpcXe-qQTb-43" value="Enter OTP Sent to emergency contact no." style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="UoYrwcGaJrfpcXe-qQTb-42">
+          <mxGeometry x="-0.1667" y="-3" relative="1" as="geometry">
+            <mxPoint x="6" y="-32" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UoYrwcGaJrfpcXe-qQTb-41" value="Documents will be displayed" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="529" y="-462" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UoYrwcGaJrfpcXe-qQTb-47" value="Download Documents" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="458" y="-272" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
