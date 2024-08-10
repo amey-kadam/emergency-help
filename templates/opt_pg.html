@@ -2,10 +2,13 @@
 <html>
 <head>
     <title>QR Scan Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/opt_pg.css') }}">
 </head>
 <body>
-    <h1>Choose an Option</h1>
-    <a href="{{ url_for('authorize', user_id=user_id) }}">Authorize</a>
-    <a href="{{ url_for('emergency', user_id=user_id) }}">Emergency</a>
+    <div class="container">
+        <h1>Choose an Option</h1>
+        <a href="{{ url_for('authorize', user_id=user_id) }}">Authorize</a>
+        <a href="{{ url_for('emergency', user_id=user_id) }}">Emergency</a>
+    </div>
 </body>
 </html>

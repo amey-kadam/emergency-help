@@ -4,18 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="{{ url_for('static', filename='css/uinfo.css') }}">
-
     <title>Emergency Contact Information</title>
   </head>
   <body>
-    <h1>Emergency Contact Information</h1>
-    <p><strong>Name:</strong> {{ name }}</p>
-    <p><strong>Contact:</strong> {{ contact }}</p>
-    <p>
+    <div class="container">
+      <h1>Emergency Contact Information</h1>
+      <p><strong>Name:</strong> {{ name }}</p>
+      <p><strong>Contact:</strong> {{ contact }}</p>
+      <p>
         <button type="submit">Send Live Location</button>
       </p>
+    </div>
   </body>
-
 </html>
-
-

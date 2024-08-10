@@ -1,4 +1,4 @@
-/* uinfo.css */
+/* styles.css */
 
 body {
     font-family: Arial, sans-serif;
@@ -22,34 +22,35 @@ body {
 }
 
 h1 {
-    font-size: 28px;
     color: #333;
+    font-size: 24px;
     margin-bottom: 20px;
 }
 
 p {
-    font-size: 18px;
     color: #555;
-    margin: 10px 0;
+    font-size: 16px;
+    margin: 15px 0;
 }
 
-strong {
-    color: #333;
-}
-
-button {
-    display: block;
-    margin: 20px auto;
-    padding: 12px 24px;
-    font-size: 18px;
-    color: #fff;
-    background-color: #333;
-    border: none;
+img {
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
     border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 20px;
 }
 
-button:hover {
-    background-color: #555;
+a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #555;
+    text-decoration: underline;
 }
