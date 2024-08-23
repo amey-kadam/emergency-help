@@ -4,4 +4,4 @@ qrcode==7.4.2
 pillow==10.4.0
 db-sqlite3
 Werkzeug==3.0.3
-pycopy-email.utils
+
