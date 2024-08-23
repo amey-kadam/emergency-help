@@ -114,9 +114,6 @@ def login():
 
 
 
-
-
-
 @app.route('/info/<int:user_id>/emergency')
 def emergency(user_id):
     db = get_db()
@@ -125,8 +122,6 @@ def emergency(user_id):
         return render_template('emrinfo.html', name=user['name'], contact=user['contact'])
     else:
         return "User not found", 404
-
-
 
 
 
@@ -145,6 +140,8 @@ def user_info(user_id):
                                document_filename=document_filename)
     else:
         return "User not found", 404
+
+
 
 @app.route('/download/<filename>')
 @login_required
